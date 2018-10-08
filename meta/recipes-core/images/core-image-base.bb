@@ -1,7 +1,7 @@
 SUMMARY = "A console-only image that fully supports the target device \
 hardware."
 
-IMAGE_FEATURES += "splash dev-pkgs tools-sdk openssh"
+IMAGE_FEATURES += "splash dev-pkgs tools-sdk ssh-server-openssh"
 
 LICENSE = "MIT"
 
