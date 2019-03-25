@@ -11,6 +11,7 @@ splash \
 dev-pkgs \
 tools-sdk \
 ssh-server-openssh \
+tools-testapps \
 "
 
 #
