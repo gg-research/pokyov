@@ -20,7 +20,6 @@ ssh-server-openssh \
 #
 IMAGE_INSTALL += "\
 i2c-tools \
-python-modules \
 "
 
 LICENSE = "MIT"
