@@ -11,7 +11,6 @@ splash \
 dev-pkgs \
 tools-sdk \
 ssh-server-openssh \
-tools-testapps \
 "
 
 #
@@ -19,9 +18,13 @@ tools-testapps \
 # mf - note I have added this 
 # -- core-image-base must have a default set of pkgs it installs
 #
-IMAGE_INSTALL += "\
-i2c-tools \
-"
+# Note according to ./documentation/../ref-variables.xml the
+# += format here can cause ordering issues
+# IMAGE_INSTALL += "i2c-tools"
+# 
+# it is better to use this. Note the prepended space.
+#
+IMAGE_INSTALL_append = " i2c-tools"
 
 LICENSE = "MIT"
 
