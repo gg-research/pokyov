@@ -2,7 +2,7 @@ SUMMARY = "A console-only image that fully supports the target device \
 hardware."
 
 # tools-testapps include i2c-tools
-#  ref ./poky-ov/meta/class/core-image.bbclass for all the possible features that can be added here
+#  ref ./poky-ov/meta/classes/core-image.bbclass for all the possible features that can be added here
 ##
 ## tools-testapps - i2c-tools
 ##
@@ -24,7 +24,7 @@ ssh-server-openssh \
 # 
 # it is better to use this. Note the prepended space.
 #
-IMAGE_INSTALL_append = " i2c-tools python-pyserial"
+IMAGE_INSTALL_append = " i2c-tools python-pyserial git cmake"
 
 LICENSE = "MIT"
 
