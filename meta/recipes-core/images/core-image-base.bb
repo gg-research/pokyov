@@ -24,7 +24,7 @@ ssh-server-openssh \
 # 
 # it is better to use this. Note the prepended space.
 #
-IMAGE_INSTALL_append = " i2c-tools python-pyserial git cmake python-smbus"
+IMAGE_INSTALL_append = " i2c-tools python-pyserial git cmake python-smbus python-pip"
 
 LICENSE = "MIT"
 
